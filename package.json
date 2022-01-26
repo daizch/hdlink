@@ -1,0 +1,49 @@
+{
+  "name": "ilink",
+  "version": "0.1.0",
+  "description": "hard link to sync up with one folder to another folder",
+  "license": "MIT",
+  "repository": "https://github.com/daizch/ilink.git",
+  "author": "daizech@gmail.com",
+  "main": "./src/index.ts",
+  "bin": {
+    "ilink": "./bin/ilink.js"
+  },
+  "engines": {
+    "node": ">=12"
+  },
+  "scripts": {
+    "clean": "tsc --build --clean",
+    "build": "rm -rf dist && tsc --build",
+    "watch": "rm -rf dist && tsc --watch",
+    "lint": "eslint --fix  . --ext .ts,.tsx,.js && prettier --write --ignore-unknown .",
+    "prepare": "yarn clean && yarn build"
+  },
+  "keywords": [
+    "cli",
+    "sync",
+    "harlink",
+    "link"
+  ],
+  "dependencies": {
+    "@types/cli-table": "^0.3.0",
+    "@types/fs-extra": "^9.0.13",
+    "cli-table": "^0.3.11",
+    "commander": "^8.1.0",
+    "fs-extra": "^10.0.0",
+    "sync-directory": "^4.0.12"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.11",
+    "@types/express-ws": "^3.0.1",
+    "@types/node-fetch": "^2.5.12",
+    "@types/supports-color": "^8.1.1",
+    "@typescript-eslint/eslint-plugin": "^4.30.0",
+    "@typescript-eslint/parser": "^4.30.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "package-json-type": "^1.0.3",
+    "prettier": "2.2.1",
+    "typescript": "^4.2.4"
+  }
+}
