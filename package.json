@@ -17,6 +17,7 @@
     "build": "rm -rf dist && tsc --build",
     "watch": "rm -rf dist && tsc --watch",
     "lint": "eslint --fix  . --ext .ts,.tsx,.js && prettier --write --ignore-unknown .",
+    "prepublishOnly": "yarn install && yarn build",
     "prepare": "yarn clean && yarn build"
   },
   "keywords": [
