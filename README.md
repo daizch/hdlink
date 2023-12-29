@@ -35,15 +35,15 @@ Commands:
 
 To register source folder before use
 ```sh
-$ ilink -name demo -s ./test/demo
+$ ilink -name foo_package_name -s ./local/package_path
 ```
 
 To sync source folder after registration
 ```sh
-$ ilink -s demo -d target/foo -w
+$ ilink -s foo_package_name -d /..../node_modules/target_package_path -w
 ```
 
 or use the real folder path without registration
 ```
-$ ilink -s ./test/demo -d target/foo -w
+$ ilink -s ./local/package_path -d /..../node_modules/target_package_path -w
 ```

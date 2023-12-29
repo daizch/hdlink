@@ -1,6 +1,6 @@
 {
   "name": "ilink",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "hard link to sync up with one folder to another folder",
   "license": "MIT",
   "repository": "https://github.com/daizch/ilink.git",
